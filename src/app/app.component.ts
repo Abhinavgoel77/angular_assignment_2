@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from './user';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'form';
+
+  userModel = new User('','','',9999999999,"dd/mm/yyyy ");
+
+  onSubmit(){
+     console.log(this.userModel);
+  }
 }
